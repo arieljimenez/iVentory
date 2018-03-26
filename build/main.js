@@ -10,17 +10,17 @@ app.on('ready', createWindow) // called when electron has initialized
 
 function createWindow() {
   mainWindow = new BrowserWindow()
-  // mainWindow = new BrowserWindow({
-    //   width: 1024,
-    //   height: 768
-    // })
+  // mainWindow = new BrowserWindow({icon: NativeImage.createFromPath(__dirname + '/icon.ico')
+  //   width: 1024,
+  //   height: 768
+  // })
 
   mainWindow.maximize()
 
   mainWindow.loadURL(`file://${__dirname}/dist/index.html`)
 
   // open dev tools by default so we can see any console errors
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', function () {
     mainWindow = null

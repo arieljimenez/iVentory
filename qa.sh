@@ -6,9 +6,9 @@
 echo "+-------------------------------------+"
 echo "|        Compiling source files       |"
 echo "+-------------------------------------+"
-npm run prod
+npm run qa
 
 echo "+-------------------------------------+"
 echo "|   Executing Electron App for Test   |"
 echo "+-------------------------------------+"
-electron app.js
+electron ./build/main.js

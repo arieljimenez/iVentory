@@ -3,10 +3,10 @@
   "productName": "iVentory",
   "version": "0.1.0",
   "description": "A Elm webapp over an Electron app :)",
-  "main": "webpack.config.js",
+  "main": "weback.config.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "prod": "webpack --mode production"
+    "qa": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
     "webapp",
     "spa"
   ],
-  "author": "Ariel Jimenez",
+  "author": {
+    "name": "Ariel Jimenez",
+    "email": "arieljimenez2025@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/arieljimenez/iVentory/issues"
@@ -27,7 +30,6 @@
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.28.11",
-    "electron-packager": "^11.2.0",
     "elm": "^0.18.0",
     "elm-webpack-loader": "^4.5.0",
     "file-loader": "^1.1.11",

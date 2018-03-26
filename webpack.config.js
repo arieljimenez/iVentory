@@ -1,7 +1,11 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: './src/static/index.js',
+  output: {
+    path: path.resolve(__dirname + '/build/dist')
+  },
   module: {
     rules: [
       {
@@ -19,14 +23,14 @@ module.exports = {
             options: { minimize: true }
           }
         ]
-      },{
+      }, {
         test: /\.(css|styl)$/,
         use: [
           {
             loader: "css-loader','style-loader"
           }
         ]
-      },{
+      }, {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
