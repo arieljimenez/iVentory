@@ -4,10 +4,10 @@
 
 ## Stack
 
-- Nodejs
-- Webpack
-- Electron framework (Infrastructure)
-- Elm (Frontend)
+- Nodejs v8.10.0 (npm v5.6.0)
+- Webpack 4.2.0
+- Electron v1.8.4 + Chromium v59.0.3071.115
+- Elm 0.18 (Frontend)
 - Golang (Backend/API/ORM)
 - MariaDB
 
