@@ -1,14 +1,25 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/static/index.js',
+  entry: {
+    'main': [
+      './static/index.js',
+      './src/styles/style.styl',
+    ],
+  },
   output: {
-    path: path.resolve(__dirname + '/build/dist')
+    path: path.resolve(__dirname + '/build/dist'),
   },
   module: {
     rules: [
       {
+        test: /\.(css|styl)$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      }, {
         test: /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
         use: {
@@ -21,13 +32,6 @@ module.exports = {
           {
             loader: "html-loader",
             options: { minimize: true }
-          }
-        ]
-      }, {
-        test: /\.(css|styl)$/,
-        use: [
-          {
-            loader: "css-loader','style-loader"
           }
         ]
       }, {
@@ -45,8 +49,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/static/index.html",
-      filename: "./index.html"
+      template: "./static/index.html",
     })
   ]
 };

@@ -2,6 +2,10 @@
 
 > What if i told you that you can make Elm desktop apps thats feels native?
 
+## Instructions
+
+- With `npm`, just run `$ npm run install`, that will triger a install of __npm__ and __elm__ dependencies.
+
 ## Stack
 
 - Nodejs v8.10.0 (npm v5.6.0)

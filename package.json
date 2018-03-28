@@ -5,8 +5,9 @@
   "description": "A Elm webapp over an Electron app :)",
   "main": "weback.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
-    "qa": "webpack --mode production"
+    "dev": "stylint src/styles/ --watch & webpack-dev-server --mode development",
+    "qa": "npm run install && webpack --mode production",
+    "install": "npm install && elm-package install -y"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.1.0",
     "style-loader": "^0.20.3",
+    "stylint": "^1.5.9",
+    "stylus": "^0.54.5",
     "url-loader": "^1.0.1",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13",

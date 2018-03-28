@@ -4,3 +4,5 @@ package-lock.json
 npm-debug.log
 dist
 release-builds
+**/.DS_Store
+.vscode

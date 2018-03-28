@@ -1,7 +1,21 @@
 module Main exposing (..)
 
-import Html exposing (text)
+import Behavior exposing (update)
+import Html exposing (Html, text)
+import Model exposing (Model, Msg, defaultModel)
+import Views exposing (view)
 
 
+init : ( Model, Cmd Msg )
+init =
+    ( defaultModel, Cmd.none )
+
+
+main : Program Never Model Msg
 main =
-    text "Hello Electron. I'm Elm."
+    Html.program
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = always Sub.none
+        }
