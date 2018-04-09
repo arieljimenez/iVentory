@@ -6,8 +6,8 @@
   "main": "weback.config.js",
   "scripts": {
     "dev": "stylint src/styles/ --watch & webpack-dev-server --mode development",
-    "qa": "npm run install && webpack --mode production",
-    "install": "npm install && elm-package install -y"
+    "build": "npm run dep && webpack --mode production",
+    "dep": "npm install && elm-package install -y"
   },
   "repository": {
     "type": "git",

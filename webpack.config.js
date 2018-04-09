@@ -7,6 +7,14 @@ module.exports = {
       './static/index.js',
       './src/styles/style.styl',
     ],
+    'vendor-style': [
+      './static/js/material.min.js',
+      './static/css/material-teal-blue.css',
+    ],
+    'vendor-font': [
+      './static/css/fontface.css',
+      './static/fonts/material-icon.woff2',
+    ]
   },
   output: {
     path: path.resolve(__dirname + '/build/dist'),
@@ -35,7 +43,7 @@ module.exports = {
           }
         ]
       }, {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
             loader: "file-loader"

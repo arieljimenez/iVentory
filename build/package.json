@@ -5,9 +5,9 @@
   "description": "A Elm webapp over an Electron app :)",
   "main": "main.js",
   "scripts": {
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds --ignore=release-builds --ignore=package-lock.json --ignore=assets",
-    "package-win": "electron-packager . iVentory --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"iVentory\" --ignore=release-builds --ignore=package-lock.json --ignore=assets",
-    "package-linux": "electron-packager . iVentory --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/linux/icon.png --prune=true --out=release-builds --ignore=release-builds --ignore=package-lock.json --ignore=assets"
+    "mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds --ignore=release-builds --ignore=package-lock.json --ignore=assets",
+    "win": "electron-packager . iVentory --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"iVentory\" --ignore=release-builds --ignore=package-lock.json --ignore=assets",
+    "linux": "electron-packager . iVentory --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/linux/icon.png --prune=true --out=release-builds --ignore=release-builds --ignore=package-lock.json --ignore=assets"
   },
   "repository": {
     "type": "git",
