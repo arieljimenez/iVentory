@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "stylint src/styles/ --watch & webpack-dev-server --mode development",
     "build": "npm run dep && webpack --mode production",
-    "dep": "npm install && elm-package install -y"
+    "dep": "npm install && elm-package install -y",
+    "api": "sh api.init.sh"
   },
   "repository": {
     "type": "git",
