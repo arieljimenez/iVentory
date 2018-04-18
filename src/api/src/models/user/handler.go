@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/arieljimenez/iventory/api/utils"
+	"github.com/arieljimenez/iventory/src/api/src/utils"
 	"google.golang.org/appengine"
 )
 

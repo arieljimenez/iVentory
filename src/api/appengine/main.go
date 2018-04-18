@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/arieljimenez/iventory/api/models/user"
+	"github.com/arieljimenez/iventory/src/api/src/models/user"
 	"google.golang.org/appengine"
 )
 
